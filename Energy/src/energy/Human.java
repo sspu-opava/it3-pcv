@@ -19,8 +19,11 @@ public class Human {
     private int age;
     private int height = 180;
     private int weight = 70;
-    private float energy = 30000;
     
+    public Human(String name){
+        this.name = name;
+    }
+
     public Human(String name, Sex sex, int age){
         this.name = name;
         this.sex = sex;
@@ -67,19 +70,7 @@ public class Human {
         this.weight = weight;
     }
 
-    public float getEnergy() {
-        return energy;
-    }
-
-    public void setEnergy(int energy) {
-        this.energy = energy;
-    } 
-    
-    public void sleep(int min) {
-        this.energy -= 0.7 * this.weight * min;
-    }
-    
     public String toString(){
-        return "My name is " + this.name + ", I'm a " + this.sex + ", " + this.age + " years old, " + this.height + " cm, " + this.weight + " kg\nMy energy = " + this.energy;
+        return "My name is " + this.name + ", I'm a " + this.sex + ", " + this.age + " years old, " + this.height + " cm, " + this.weight + " kg";
     }
 }
