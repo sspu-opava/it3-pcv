@@ -40,7 +40,7 @@ public class Sportsman extends Human {
     @Override
     public String toString() {
         String output = super.toString();
-        return output + " Sportsman{" + "energy=" + energy + '}';
+        return output + "[Sportsman]";
     }       
         
 }

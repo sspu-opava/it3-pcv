@@ -9,7 +9,25 @@ package energy;
  *
  * @author ml
  */
-public class Swimmer extends Sportsman {
+public class Swimmer extends Sportsman implements Move {
+    private Boolean stateOfMoving = false;
+            
+    @Override
+    public void startMoving() {
+        System.out.println("Swimming");
+        this.stateOfMoving = true;
+    }
+
+    @Override
+    public void stopMoving() {
+        this.stateOfMoving = false;
+    }
+
+    @Override
+    public boolean getState() {
+        return this.stateOfMoving;
+    }
+
     public enum Style {
         FRONTCRAWL("Front crawl", "kraul"),
         BACKSTROKE("Backstroke", "znak"),

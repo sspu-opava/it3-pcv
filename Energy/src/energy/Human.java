@@ -71,6 +71,6 @@ public class Human {
     }
 
     public String toString(){
-        return "My name is " + this.name + ", I'm a " + this.sex + ", " + this.age + " years old, " + this.height + " cm, " + this.weight + " kg";
+        return this.getName() + " [Human]";
     }
 }
