@@ -1,0 +1,4 @@
+name;class;age;height;weight
+Petra;Human;16;180;70
+ssdfdsfs;Sportsman;0;180;70
+ertre;Sportsman;0;180;70
